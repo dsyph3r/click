@@ -3,4 +3,4 @@
 app/cache/*
 app/logs/*
 
-src/Click/GalleryBundle/Resources/public/images/*
+src/Click/GalleryBundle/Resources/public/images/sample/*
