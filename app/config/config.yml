@@ -48,6 +48,7 @@ doctrine:
             default:
                 mappings:
                     AcmeDemo: ~
+                    ClickGallery: ~
 
 # Swiftmailer Configuration
 swiftmailer:

@@ -2274,3 +2274,116 @@
 2011-03-29T17:33:28+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\SecurityBundle\ResponseListener"
 2011-03-29T17:33:28+01:00 DEBUG: Notified event "onCoreResponse" to listener "Sensio\Bundle\FrameworkExtraBundle\Cache\AnnotationCacheListener"
 2011-03-29T17:33:28+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\WebProfilerBundle\WebDebugToolbarListener"
+2011-03-29T17:36:32+01:00 INFO: Matched route "gallery" (parameters: {"_controller":"Click\\GalleryBundle\\Controller\\DefaultController::indexAction","_route":"gallery"})
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Bundle\FrameworkBundle\RequestListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Component\Security\Http\Firewall"
+2011-03-29T17:36:32+01:00 INFO: Using controller "Click\GalleryBundle\Controller\DefaultController::indexAction"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreController" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ControllerAnnotationParser"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverterListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\View\AnnotationTemplateListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreController" to listener "Acme\DemoBundle\ControllerListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreController" to listener "JMS\SecurityExtraBundle\Controller\ControllerListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Component\HttpKernel\ResponseListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\SecurityBundle\ResponseListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreResponse" to listener "Sensio\Bundle\FrameworkExtraBundle\Cache\AnnotationCacheListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\WebProfilerBundle\WebDebugToolbarListener"
+2011-03-29T17:36:32+01:00 INFO: Matched route "_wdt" (parameters: {"_controller":"Symfony\\Bundle\\WebProfilerBundle\\Controller\\ProfilerController::toolbarAction","token":"4d920a909f1fa","_route":"_wdt"})
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Bundle\FrameworkBundle\RequestListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Component\Security\Http\Firewall"
+2011-03-29T17:36:32+01:00 INFO: Using controller "Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController::toolbarAction"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreController" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ControllerAnnotationParser"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverterListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\View\AnnotationTemplateListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreController" to listener "Acme\DemoBundle\ControllerListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreController" to listener "JMS\SecurityExtraBundle\Controller\ControllerListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Component\HttpKernel\ResponseListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\SecurityBundle\ResponseListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreResponse" to listener "Sensio\Bundle\FrameworkExtraBundle\Cache\AnnotationCacheListener"
+2011-03-29T17:36:32+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\WebProfilerBundle\WebDebugToolbarListener"
+2011-03-29T17:42:59+01:00 INFO: CREATE TABLE photo (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(255) NOT NULL, UNIQUE INDEX UNIQ_14B784185E237E06 (name), PRIMARY KEY(id)) ENGINE = InnoDB ([])
+2011-03-29T17:43:36+01:00 INFO: Matched route "gallery" (parameters: {"_controller":"Click\\GalleryBundle\\Controller\\DefaultController::indexAction","_route":"gallery"})
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Bundle\FrameworkBundle\RequestListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Component\Security\Http\Firewall"
+2011-03-29T17:43:36+01:00 INFO: Using controller "Click\GalleryBundle\Controller\DefaultController::indexAction"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreController" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ControllerAnnotationParser"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverterListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\View\AnnotationTemplateListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreController" to listener "Acme\DemoBundle\ControllerListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreController" to listener "JMS\SecurityExtraBundle\Controller\ControllerListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Component\HttpKernel\ResponseListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\SecurityBundle\ResponseListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreResponse" to listener "Sensio\Bundle\FrameworkExtraBundle\Cache\AnnotationCacheListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\WebProfilerBundle\WebDebugToolbarListener"
+2011-03-29T17:43:36+01:00 INFO: Matched route "_wdt" (parameters: {"_controller":"Symfony\\Bundle\\WebProfilerBundle\\Controller\\ProfilerController::toolbarAction","token":"4d920c3870045","_route":"_wdt"})
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Bundle\FrameworkBundle\RequestListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Component\Security\Http\Firewall"
+2011-03-29T17:43:36+01:00 INFO: Using controller "Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController::toolbarAction"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreController" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ControllerAnnotationParser"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverterListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\View\AnnotationTemplateListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreController" to listener "Acme\DemoBundle\ControllerListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreController" to listener "JMS\SecurityExtraBundle\Controller\ControllerListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Component\HttpKernel\ResponseListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\SecurityBundle\ResponseListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreResponse" to listener "Sensio\Bundle\FrameworkExtraBundle\Cache\AnnotationCacheListener"
+2011-03-29T17:43:36+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\WebProfilerBundle\WebDebugToolbarListener"
+2011-03-29T17:45:21+01:00 INFO: SHOW FULL TABLES WHERE Table_type = 'BASE TABLE' ([])
+2011-03-29T17:45:21+01:00 INFO: DESCRIBE photo ([])
+2011-03-29T17:45:21+01:00 INFO: SELECT DISTINCT k.`CONSTRAINT_NAME`, k.`COLUMN_NAME`, k.`REFERENCED_TABLE_NAME`, k.`REFERENCED_COLUMN_NAME` /*!50116 , c.update_rule, c.delete_rule */ FROM information_schema.key_column_usage k /*!50116 INNER JOIN information_schema.referential_constraints c ON   c.constraint_name = k.constraint_name AND   c.table_name = 'photo' */ WHERE k.table_name = 'photo' AND k.table_schema = 'click' /*!50116 AND c.constraint_schema = 'click' */ AND k.`REFERENCED_COLUMN_NAME` is not NULL ([])
+2011-03-29T17:45:21+01:00 INFO: SELECT TABLE_NAME AS `Table`, NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, SEQ_IN_INDEX AS Seq_in_index, COLUMN_NAME AS Column_Name, COLLATION AS Collation, CARDINALITY AS Cardinality, SUB_PART AS Sub_Part, PACKED AS Packed, NULLABLE AS `Null`, INDEX_TYPE AS Index_Type, COMMENT AS Comment FROM information_schema.STATISTICS WHERE TABLE_NAME = 'photo' AND TABLE_SCHEMA = 'click' ([])
+2011-03-29T17:45:34+01:00 INFO: SHOW FULL TABLES WHERE Table_type = 'BASE TABLE' ([])
+2011-03-29T17:45:34+01:00 INFO: DESCRIBE photo ([])
+2011-03-29T17:45:34+01:00 INFO: SELECT DISTINCT k.`CONSTRAINT_NAME`, k.`COLUMN_NAME`, k.`REFERENCED_TABLE_NAME`, k.`REFERENCED_COLUMN_NAME` /*!50116 , c.update_rule, c.delete_rule */ FROM information_schema.key_column_usage k /*!50116 INNER JOIN information_schema.referential_constraints c ON   c.constraint_name = k.constraint_name AND   c.table_name = 'photo' */ WHERE k.table_name = 'photo' AND k.table_schema = 'click' /*!50116 AND c.constraint_schema = 'click' */ AND k.`REFERENCED_COLUMN_NAME` is not NULL ([])
+2011-03-29T17:45:34+01:00 INFO: SELECT TABLE_NAME AS `Table`, NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, SEQ_IN_INDEX AS Seq_in_index, COLUMN_NAME AS Column_Name, COLLATION AS Collation, CARDINALITY AS Cardinality, SUB_PART AS Sub_Part, PACKED AS Packed, NULLABLE AS `Null`, INDEX_TYPE AS Index_Type, COMMENT AS Comment FROM information_schema.STATISTICS WHERE TABLE_NAME = 'photo' AND TABLE_SCHEMA = 'click' ([])
+2011-03-29T17:45:34+01:00 INFO: CREATE TABLE gallery (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(255) NOT NULL, UNIQUE INDEX UNIQ_472B783A5E237E06 (name), PRIMARY KEY(id)) ENGINE = InnoDB ([])
+2011-03-29T17:45:41+01:00 INFO: SHOW FULL TABLES WHERE Table_type = 'BASE TABLE' ([])
+2011-03-29T17:45:41+01:00 INFO: DESCRIBE gallery ([])
+2011-03-29T17:45:41+01:00 INFO: SELECT DISTINCT k.`CONSTRAINT_NAME`, k.`COLUMN_NAME`, k.`REFERENCED_TABLE_NAME`, k.`REFERENCED_COLUMN_NAME` /*!50116 , c.update_rule, c.delete_rule */ FROM information_schema.key_column_usage k /*!50116 INNER JOIN information_schema.referential_constraints c ON   c.constraint_name = k.constraint_name AND   c.table_name = 'gallery' */ WHERE k.table_name = 'gallery' AND k.table_schema = 'click' /*!50116 AND c.constraint_schema = 'click' */ AND k.`REFERENCED_COLUMN_NAME` is not NULL ([])
+2011-03-29T17:45:41+01:00 INFO: SELECT TABLE_NAME AS `Table`, NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, SEQ_IN_INDEX AS Seq_in_index, COLUMN_NAME AS Column_Name, COLLATION AS Collation, CARDINALITY AS Cardinality, SUB_PART AS Sub_Part, PACKED AS Packed, NULLABLE AS `Null`, INDEX_TYPE AS Index_Type, COMMENT AS Comment FROM information_schema.STATISTICS WHERE TABLE_NAME = 'gallery' AND TABLE_SCHEMA = 'click' ([])
+2011-03-29T17:45:41+01:00 INFO: DESCRIBE photo ([])
+2011-03-29T17:45:41+01:00 INFO: SELECT DISTINCT k.`CONSTRAINT_NAME`, k.`COLUMN_NAME`, k.`REFERENCED_TABLE_NAME`, k.`REFERENCED_COLUMN_NAME` /*!50116 , c.update_rule, c.delete_rule */ FROM information_schema.key_column_usage k /*!50116 INNER JOIN information_schema.referential_constraints c ON   c.constraint_name = k.constraint_name AND   c.table_name = 'photo' */ WHERE k.table_name = 'photo' AND k.table_schema = 'click' /*!50116 AND c.constraint_schema = 'click' */ AND k.`REFERENCED_COLUMN_NAME` is not NULL ([])
+2011-03-29T17:45:41+01:00 INFO: SELECT TABLE_NAME AS `Table`, NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, SEQ_IN_INDEX AS Seq_in_index, COLUMN_NAME AS Column_Name, COLLATION AS Collation, CARDINALITY AS Cardinality, SUB_PART AS Sub_Part, PACKED AS Packed, NULLABLE AS `Null`, INDEX_TYPE AS Index_Type, COMMENT AS Comment FROM information_schema.STATISTICS WHERE TABLE_NAME = 'photo' AND TABLE_SCHEMA = 'click' ([])
+2011-03-29T18:25:00+01:00 INFO: Matched route "gallery" (parameters: {"_controller":"Click\\GalleryBundle\\Controller\\DefaultController::indexAction","_route":"gallery"})
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Bundle\FrameworkBundle\RequestListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Component\Security\Http\Firewall"
+2011-03-29T18:25:00+01:00 INFO: Using controller "Click\GalleryBundle\Controller\DefaultController::indexAction"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreController" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ControllerAnnotationParser"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverterListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\View\AnnotationTemplateListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreController" to listener "Acme\DemoBundle\ControllerListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreController" to listener "JMS\SecurityExtraBundle\Controller\ControllerListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Component\HttpKernel\ResponseListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\SecurityBundle\ResponseListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreResponse" to listener "Sensio\Bundle\FrameworkExtraBundle\Cache\AnnotationCacheListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\WebProfilerBundle\WebDebugToolbarListener"
+2011-03-29T18:25:00+01:00 INFO: Matched route "_wdt" (parameters: {"_controller":"Symfony\\Bundle\\WebProfilerBundle\\Controller\\ProfilerController::toolbarAction","token":"4d9215eca53bd","_route":"_wdt"})
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Bundle\FrameworkBundle\RequestListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreRequest" to listener "Symfony\Component\Security\Http\Firewall"
+2011-03-29T18:25:00+01:00 INFO: Using controller "Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController::toolbarAction"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreController" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ControllerAnnotationParser"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverterListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreController" to listener "Sensio\Bundle\FrameworkExtraBundle\View\AnnotationTemplateListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreController" to listener "Acme\DemoBundle\ControllerListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreController" to listener "JMS\SecurityExtraBundle\Controller\ControllerListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Component\HttpKernel\ResponseListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\SecurityBundle\ResponseListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreResponse" to listener "Sensio\Bundle\FrameworkExtraBundle\Cache\AnnotationCacheListener"
+2011-03-29T18:25:00+01:00 DEBUG: Notified event "onCoreResponse" to listener "Symfony\Bundle\WebProfilerBundle\WebDebugToolbarListener"

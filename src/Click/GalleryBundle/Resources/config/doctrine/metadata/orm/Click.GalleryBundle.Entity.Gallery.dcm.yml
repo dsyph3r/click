@@ -1,0 +1,14 @@
+Click\GalleryBundle\Entity\Gallery:
+    type: entity
+    table: gallery
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: IDENTITY
+        name:
+            type: string
+            length: 255
+            unique: true
+    lifecycleCallbacks: {  }

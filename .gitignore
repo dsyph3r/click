@@ -1,0 +1,6 @@
+~*
+
+app/cache/*
+app/logs/*
+
+src/Click/GalleryBundle/Resources/public/images/*
