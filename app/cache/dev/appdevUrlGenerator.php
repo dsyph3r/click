@@ -139,7 +139,7 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
         $defaults = $this->defaults;
         $defaults['_controller'] = 'Click\\GalleryBundle\\Controller\\DefaultController::indexAction';
 
-        return array(array (), $defaults, array (), array (  0 =>   array (    0 => 'text',    1 => '/',    2 => 'bob',    3 => NULL,  ),));
+        return array(array (), $defaults, array (), array (  0 =>   array (    0 => 'text',    1 => '/',    2 => '',    3 => NULL,  ),));
     }
 
     private function get_welcomeRouteInfo()
@@ -147,7 +147,7 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
         $defaults = $this->defaults;
         $defaults['_controller'] = 'Acme\\DemoBundle\\Controller\\WelcomeController::indexAction';
 
-        return array(array (), $defaults, array (), array (  0 =>   array (    0 => 'text',    1 => '/',    2 => '',    3 => NULL,  ),));
+        return array(array (), $defaults, array (), array (  0 =>   array (    0 => 'text',    1 => '/',    2 => 'welcome',    3 => NULL,  ),));
     }
 
     private function get_demo_loginRouteInfo()

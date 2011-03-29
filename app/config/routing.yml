@@ -2,7 +2,7 @@ gallery:
     resource: @ClickGallery/Resources/config/routing.yml
     
 _welcome:
-    pattern:  /
+    pattern:  /welcome
     defaults: { _controller: AcmeDemo:Welcome:index }
 
 _demo_secured:

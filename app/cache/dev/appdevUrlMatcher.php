@@ -78,15 +78,15 @@ class appdevUrlMatcher extends Symfony\Component\Routing\Matcher\UrlMatcher
         }
 
         // gallery
-        if ($pathinfo === '/bob') {
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return array('_controller' => 'Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction', 'url' => $this->context['base_url'].$pathinfo.'/', 'permanent' => true, '_route' => 'gallery');
+            }
             return array_merge($this->mergeDefaults(array(), array (  '_controller' => 'Click\\GalleryBundle\\Controller\\DefaultController::indexAction',)), array('_route' => 'gallery'));
         }
 
         // _welcome
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return array('_controller' => 'Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction', 'url' => $this->context['base_url'].$pathinfo.'/', 'permanent' => true, '_route' => '_welcome');
-            }
+        if ($pathinfo === '/welcome') {
             return array_merge($this->mergeDefaults(array(), array (  '_controller' => 'Acme\\DemoBundle\\Controller\\WelcomeController::indexAction',)), array('_route' => '_welcome'));
         }
 
