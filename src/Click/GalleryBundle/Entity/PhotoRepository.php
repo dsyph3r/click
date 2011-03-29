@@ -12,4 +12,13 @@ use Doctrine\ORM\EntityRepository;
  */
 class PhotoRepository extends EntityRepository
 {
+    
+    public function getPhotos()
+    {
+    	$qb = $this->createQueryBuilder('p')
+                   ->select('p');  
+    	
+    	return $qb->getQuery()->getResult();    	
+    }
+    
 }

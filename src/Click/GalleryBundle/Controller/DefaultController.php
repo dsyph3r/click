@@ -8,6 +8,18 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('ClickGallery:Default:index.html.twig');
+        
+        $manager = $this->get('doctrine.orm.entity_manager');
+
+        // Get the photos
+        $photos = $manager->getRepository('Click\GalleryBundle\Entity\Photo')->getPhotos();
+        
+        return $this->render(
+            'ClickGallery:Default:index.html.twig',
+            array(
+                'photos' => $photos
+            )
+        );
+        
     }
 }

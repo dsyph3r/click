@@ -35,27 +35,27 @@ class __TwigTemplate_3e6f8242b8a9c459cd76bd6078662f93 extends Twig_Template
     {
         // line 5
         echo "    
-    <div class=\"photo\">
-        <img src=\"";
-        // line 7
-        echo twig_escape_filter($this->env, $this->env->getExtension('templating')->getAssetUrl("bundles/clickgallery/images/image_01.png"), "html");
-        echo "\" alt=\"Symfony\" />
-    </div>
-    
-    <div class=\"photo\">
-        <img src=\"";
+    ";
+        // line 6
+        $context['_parent'] = (array) $context;
+        $context['_seq'] = twig_ensure_traversable($this->getContext($context, 'photos', '6'));
+        foreach ($context['_seq'] as $context['_key'] => $context['photo']) {
+            // line 7
+            echo "        <div class=\"photo\">
+            <img src=\"/bundles/clickgallery/images/sample/";
+            // line 8
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getContext($context, 'photo', '8'), "name", array(), "any", false, 8), "html");
+            echo "\" alt=\" ";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getContext($context, 'photo', '8'), "name", array(), "any", false, 8), "html");
+            echo "\" />
+        </div>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['photo'], $context['_parent'], $context['loop']);
+        $context = array_merge($_parent, array_intersect_key($context, $_parent));
         // line 11
-        echo twig_escape_filter($this->env, $this->env->getExtension('templating')->getAssetUrl("bundles/clickgallery/images/image_01.png"), "html");
-        echo "\" alt=\"Symfony\" />
-    </div>
-    
-    <div class=\"photo\">
-        <img src=\"";
-        // line 15
-        echo twig_escape_filter($this->env, $this->env->getExtension('templating')->getAssetUrl("bundles/clickgallery/images/image_01.png"), "html");
-        echo "\" alt=\"Symfony\" />
-    </div>
-    
+        echo "        
 ";
     }
 
