@@ -1,6 +1,7 @@
 Click\GalleryBundle\Entity\Photo:
     type: entity
     table: photo
+    repositoryClass: Click\GalleryBundle\Entity\PhotoRepository
     fields:
         id:
             type: integer
