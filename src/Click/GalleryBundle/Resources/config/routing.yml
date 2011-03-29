@@ -1,0 +1,3 @@
+gallery:
+    pattern:  /bob
+    defaults: { _controller: ClickGallery:Default:index }
