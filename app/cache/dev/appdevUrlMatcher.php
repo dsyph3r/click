@@ -85,6 +85,11 @@ class appdevUrlMatcher extends Symfony\Component\Routing\Matcher\UrlMatcher
             return array_merge($this->mergeDefaults(array(), array (  '_controller' => 'Click\\GalleryBundle\\Controller\\DefaultController::indexAction',)), array('_route' => 'gallery'));
         }
 
+        // upload
+        if ($pathinfo === '/upload') {
+            return array_merge($this->mergeDefaults(array(), array (  '_controller' => 'Click\\GalleryBundle\\Controller\\DefaultController::uploadAction',)), array('_route' => 'upload'));
+        }
+
         // _welcome
         if ($pathinfo === '/welcome') {
             return array_merge($this->mergeDefaults(array(), array (  '_controller' => 'Acme\\DemoBundle\\Controller\\WelcomeController::indexAction',)), array('_route' => '_welcome'));

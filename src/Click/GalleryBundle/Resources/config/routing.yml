@@ -1,3 +1,7 @@
 gallery:
     pattern:  /
     defaults: { _controller: ClickGallery:Default:index }
+    
+upload:
+    pattern:  /upload
+    defaults: { _controller: ClickGallery:Default:upload }

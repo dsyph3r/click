@@ -20,6 +20,7 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
        '_configurator_step' => true,
        '_configurator_final' => true,
        'gallery' => true,
+       'upload' => true,
        '_welcome' => true,
        '_demo_login' => true,
        '_security_check' => true,
@@ -140,6 +141,14 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
         $defaults['_controller'] = 'Click\\GalleryBundle\\Controller\\DefaultController::indexAction';
 
         return array(array (), $defaults, array (), array (  0 =>   array (    0 => 'text',    1 => '/',    2 => '',    3 => NULL,  ),));
+    }
+
+    private function getuploadRouteInfo()
+    {
+        $defaults = $this->defaults;
+        $defaults['_controller'] = 'Click\\GalleryBundle\\Controller\\DefaultController::uploadAction';
+
+        return array(array (), $defaults, array (), array (  0 =>   array (    0 => 'text',    1 => '/',    2 => 'upload',    3 => NULL,  ),));
     }
 
     private function get_welcomeRouteInfo()

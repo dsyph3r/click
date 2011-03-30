@@ -1,0 +1,24 @@
+{% extends "ClickGallery::layout.html.twig" %}
+
+{% block content %}
+    
+    <form action="#" method="post" {{ form_enctype(form) }}>
+        {{ form_errors(form) }}
+
+        {% for field in form %}
+            {% if not field.ishidden %}
+            <div>
+                {{ form_errors(field) }}
+                {{ form_label(field) }}
+                {{ form_field(field) }}
+            </div>
+            {% endif %}
+        {% endfor %}
+    
+        {{ form_hidden(form) }}
+
+        <input type="submit" value="Send!" />
+    </form>
+
+        
+{% endblock %}
