@@ -311,7 +311,7 @@ class appDevDebugProjectContainer extends Container
         $a = new \Doctrine\DBAL\Configuration();
         $a->setSQLLogger($this->get('doctrine.dbal.logger'));
 
-        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('dbname' => 'click', 'host' => 'localhost', 'user' => 'development', 'password' => '4typA52z', 'driver' => 'pdo_mysql', 'port' => NULL, 'driverOptions' => array()), $a, new \Doctrine\Common\EventManager());
+        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('dbname' => 'click', 'host' => 'localhost', 'user' => 'development', 'password' => 'A5FTb14R', 'driver' => 'pdo_mysql', 'port' => NULL, 'driverOptions' => array()), $a, new \Doctrine\Common\EventManager());
     }
 
     /**
@@ -1787,7 +1787,7 @@ class appDevDebugProjectContainer extends Container
             'database_host' => 'localhost',
             'database_name' => 'click',
             'database_user' => 'development',
-            'database_password' => '4typA52z',
+            'database_password' => 'A5FTb14R',
             'mailer_transport' => 'smtp',
             'mailer_host' => 'localhost',
             'mailer_user' => '',
