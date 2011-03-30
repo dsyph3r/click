@@ -124,18 +124,18 @@ class appDevDebugProjectContainer extends Container
     {
         $a = $this->get('templating.loader');
 
-        $this->services['assetic.asset_manager'] = $instance = new \Assetic\Factory\LazyAssetManager($this->get('assetic.asset_factory'), array('twig' => new \Assetic\Factory\Loader\CachedFormulaLoader(new \Assetic\Extension\Twig\TwigFormulaLoader($this->get('twig')), new \Assetic\Cache\ConfigCache('/var/www/html/source/click/app/cache/dev/assetic/config'), true)));
+        $this->services['assetic.asset_manager'] = $instance = new \Assetic\Factory\LazyAssetManager($this->get('assetic.asset_factory'), array('twig' => new \Assetic\Factory\Loader\CachedFormulaLoader(new \Assetic\Extension\Twig\TwigFormulaLoader($this->get('twig')), new \Assetic\Cache\ConfigCache('/var/www/html/source/labs/click/app/cache/dev/assetic/config'), true)));
 
-        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'Framework', '/var/www/html/source/click/vendor/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
-        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'Security', '/var/www/html/source/click/vendor/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
-        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'Twig', '/var/www/html/source/click/vendor/symfony/src/Symfony/Bundle/TwigBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
-        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'Swiftmailer', '/var/www/html/source/click/vendor/symfony/src/Symfony/Bundle/SwiftmailerBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
-        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'Doctrine', '/var/www/html/source/click/vendor/symfony/src/Symfony/Bundle/DoctrineBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
-        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'AcmeDemo', '/var/www/html/source/click/src/Acme/DemoBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
-        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'ClickGallery', '/var/www/html/source/click/src/Click/GalleryBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
-        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'WebProfiler', '/var/www/html/source/click/vendor/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
-        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'SymfonyWebConfigurator', '/var/www/html/source/click/vendor/bundles/Symfony/Bundle/WebConfiguratorBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
-        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, '', '/var/www/html/source/click/app/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'Framework', '/var/www/html/source/labs/click/vendor/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'Security', '/var/www/html/source/labs/click/vendor/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'Twig', '/var/www/html/source/labs/click/vendor/symfony/src/Symfony/Bundle/TwigBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'Swiftmailer', '/var/www/html/source/labs/click/vendor/symfony/src/Symfony/Bundle/SwiftmailerBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'Doctrine', '/var/www/html/source/labs/click/vendor/symfony/src/Symfony/Bundle/DoctrineBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'AcmeDemo', '/var/www/html/source/labs/click/src/Acme/DemoBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'ClickGallery', '/var/www/html/source/labs/click/src/Click/GalleryBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'WebProfiler', '/var/www/html/source/labs/click/vendor/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'SymfonyWebConfigurator', '/var/www/html/source/labs/click/vendor/bundles/Symfony/Bundle/WebConfiguratorBundle/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, '', '/var/www/html/source/labs/click/app/Resources/views', '/^[^.]+\\.[^.]+\\.twig$/'), 'twig');
 
         return $instance;
     }
@@ -325,16 +325,16 @@ class appDevDebugProjectContainer extends Container
     protected function getDoctrine_Orm_DefaultEntityManagerService()
     {
         $a = new \Doctrine\Common\Cache\ArrayCache();
-        $a->setNamespace('sf2orm_default_199e395d44e449dd77316a22bbdffb42');
+        $a->setNamespace('sf2orm_default_bef36c7e25b202c939b9d3379b14515c');
 
         $b = new \Doctrine\Common\Cache\ArrayCache();
-        $b->setNamespace('sf2orm_default_199e395d44e449dd77316a22bbdffb42');
+        $b->setNamespace('sf2orm_default_bef36c7e25b202c939b9d3379b14515c');
 
         $c = new \Doctrine\Common\Cache\ArrayCache();
-        $c->setNamespace('sf2orm_default_199e395d44e449dd77316a22bbdffb42');
+        $c->setNamespace('sf2orm_default_bef36c7e25b202c939b9d3379b14515c');
 
         $d = new \Doctrine\ORM\Mapping\Driver\DriverChain();
-        $d->addDriver(new \Doctrine\ORM\Mapping\Driver\YamlDriver(array(0 => '/var/www/html/source/click/src/Click/GalleryBundle/Resources/config/doctrine/metadata/orm')), 'Click\\GalleryBundle\\Entity');
+        $d->addDriver(new \Doctrine\ORM\Mapping\Driver\YamlDriver(array(0 => '/var/www/html/source/labs/click/src/Click/GalleryBundle/Resources/config/doctrine/metadata/orm')), 'Click\\GalleryBundle\\Entity');
 
         $e = new \Doctrine\ORM\Configuration();
         $e->setEntityNamespaces(array('ClickGallery' => 'Click\\GalleryBundle\\Entity'));
@@ -342,7 +342,7 @@ class appDevDebugProjectContainer extends Container
         $e->setQueryCacheImpl($b);
         $e->setResultCacheImpl($c);
         $e->setMetadataDriverImpl($d);
-        $e->setProxyDir('/var/www/html/source/click/app/cache/dev/doctrine/orm/Proxies');
+        $e->setProxyDir('/var/www/html/source/labs/click/app/cache/dev/doctrine/orm/Proxies');
         $e->setProxyNamespace('Proxies');
         $e->setAutoGenerateProxyClasses(true);
         $e->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
@@ -486,7 +486,7 @@ class appDevDebugProjectContainer extends Container
     {
         $a = new \Zend\Log\Filter\Priority(7);
 
-        $b = new \Zend\Log\Writer\Stream('/var/www/html/source/click/app/logs/dev.log');
+        $b = new \Zend\Log\Writer\Stream('/var/www/html/source/labs/click/app/logs/dev.log');
         $b->addFilter($a);
         $b->setFormatter(new \Zend\Log\Formatter\Simple('%timestamp% %priorityName%: %message%
 '));
@@ -512,7 +512,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getMailerService()
     {
-        require_once '/var/www/html/source/click/vendor/swiftmailer/lib/swift_init.php';
+        require_once '/var/www/html/source/labs/click/vendor/swiftmailer/lib/swift_init.php';
 
         return $this->services['mailer'] = new \Swift_Mailer($this->get('swiftmailer.transport'));
     }
@@ -613,7 +613,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getRouter_CachedService()
     {
-        return $this->services['router.cached'] = new \Symfony\Bundle\FrameworkBundle\Routing\CachedRouter('/var/www/html/source/click/app/cache/dev', 'appdevUrlMatcher', 'appdevUrlGenerator');
+        return $this->services['router.cached'] = new \Symfony\Bundle\FrameworkBundle\Routing\CachedRouter('/var/www/html/source/labs/click/app/cache/dev', 'appdevUrlMatcher', 'appdevUrlGenerator');
     }
 
     /**
@@ -626,7 +626,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getRouter_RealService()
     {
-        return $this->services['router.real'] = new \Symfony\Component\Routing\Router(new \Symfony\Bundle\FrameworkBundle\Routing\LazyLoader($this, 'routing.loader.real'), '/var/www/html/source/click/app/config/routing_dev.yml', array('cache_dir' => '/var/www/html/source/click/app/cache/dev', 'debug' => true, 'generator_class' => 'Symfony\\Component\\Routing\\Generator\\UrlGenerator', 'generator_base_class' => 'Symfony\\Component\\Routing\\Generator\\UrlGenerator', 'generator_dumper_class' => 'Symfony\\Component\\Routing\\Generator\\Dumper\\PhpGeneratorDumper', 'generator_cache_class' => 'appdevUrlGenerator', 'matcher_class' => 'Symfony\\Component\\Routing\\Matcher\\UrlMatcher', 'matcher_base_class' => 'Symfony\\Component\\Routing\\Matcher\\UrlMatcher', 'matcher_dumper_class' => 'Symfony\\Component\\Routing\\Matcher\\Dumper\\PhpMatcherDumper', 'matcher_cache_class' => 'appdevUrlMatcher', 'resource_type' => ''));
+        return $this->services['router.real'] = new \Symfony\Component\Routing\Router(new \Symfony\Bundle\FrameworkBundle\Routing\LazyLoader($this, 'routing.loader.real'), '/var/www/html/source/labs/click/app/config/routing_dev.yml', array('cache_dir' => '/var/www/html/source/labs/click/app/cache/dev', 'debug' => true, 'generator_class' => 'Symfony\\Component\\Routing\\Generator\\UrlGenerator', 'generator_base_class' => 'Symfony\\Component\\Routing\\Generator\\UrlGenerator', 'generator_dumper_class' => 'Symfony\\Component\\Routing\\Generator\\Dumper\\PhpGeneratorDumper', 'generator_cache_class' => 'appdevUrlGenerator', 'matcher_class' => 'Symfony\\Component\\Routing\\Matcher\\UrlMatcher', 'matcher_base_class' => 'Symfony\\Component\\Routing\\Matcher\\UrlMatcher', 'matcher_dumper_class' => 'Symfony\\Component\\Routing\\Matcher\\Dumper\\PhpMatcherDumper', 'matcher_cache_class' => 'appdevUrlMatcher', 'resource_type' => ''));
     }
 
     /**
@@ -914,7 +914,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSymfony_WebconfiguratorService()
     {
-        return $this->services['symfony.webconfigurator'] = new \Symfony\Bundle\WebConfiguratorBundle\Configurator('/var/www/html/source/click/app');
+        return $this->services['symfony.webconfigurator'] = new \Symfony\Bundle\WebConfiguratorBundle\Configurator('/var/www/html/source/labs/click/app');
     }
 
     /**
@@ -979,7 +979,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getTemplating_Helper_CodeService()
     {
-        return $this->services['templating.helper.code'] = new \Symfony\Bundle\FrameworkBundle\Templating\Helper\CodeHelper('', '/var/www/html/source/click/app');
+        return $this->services['templating.helper.code'] = new \Symfony\Bundle\FrameworkBundle\Templating\Helper\CodeHelper('', '/var/www/html/source/labs/click/app');
     }
 
     /**
@@ -1165,7 +1165,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getTranslator_RealService()
     {
-        $this->services['translator.real'] = $instance = new \Symfony\Bundle\FrameworkBundle\Translation\Translator($this, $this->get('translator.selector'), array('cache_dir' => '/var/www/html/source/click/app/cache/dev/translations', 'debug' => true), $this->get('session'));
+        $this->services['translator.real'] = $instance = new \Symfony\Bundle\FrameworkBundle\Translation\Translator($this, $this->get('translator.selector'), array('cache_dir' => '/var/www/html/source/labs/click/app/cache/dev/translations', 'debug' => true), $this->get('session'));
 
         $instance->setFallbackLocale('en');
 
@@ -1182,7 +1182,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getTwigService()
     {
-        $this->services['twig'] = $instance = new \Twig_Environment($this->get('twig.loader'), array('debug' => true, 'strict_variables' => true, 'cache' => '/var/www/html/source/click/app/cache/dev/twig', 'charset' => 'UTF-8'));
+        $this->services['twig'] = $instance = new \Twig_Environment($this->get('twig.loader'), array('debug' => true, 'strict_variables' => true, 'cache' => '/var/www/html/source/labs/click/app/cache/dev/twig', 'charset' => 'UTF-8'));
 
         $instance->addExtension(new \Symfony\Bundle\SecurityBundle\Twig\Extension\SecurityExtension($this->get('security.context')));
         $instance->addExtension(new \Symfony\Bridge\Twig\Extension\TranslationExtension($this->get('translator')));
@@ -1299,7 +1299,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getAssetic_AssetFactoryService()
     {
-        $this->services['assetic.asset_factory'] = $instance = new \Symfony\Bundle\AsseticBundle\Factory\AssetFactory($this->get('kernel'), '/var/www/html/source/click/app/../web', true);
+        $this->services['assetic.asset_factory'] = $instance = new \Symfony\Bundle\AsseticBundle\Factory\AssetFactory($this->get('kernel'), '/var/www/html/source/labs/click/app/../web', true);
 
         $instance->setFilterManager($this->get('assetic.filter_manager'));
 
@@ -1320,7 +1320,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getAssetic_CacheService()
     {
-        return $this->services['assetic.cache'] = new \Assetic\Cache\FilesystemCache('/var/www/html/source/click/app/cache/dev/assetic/assets');
+        return $this->services['assetic.cache'] = new \Assetic\Cache\FilesystemCache('/var/www/html/source/labs/click/app/cache/dev/assetic/assets');
     }
 
     /**
@@ -1545,7 +1545,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getProfiler_StorageService()
     {
-        return $this->services['profiler.storage'] = new \Symfony\Component\HttpKernel\Profiler\SqliteProfilerStorage('sqlite:/var/www/html/source/click/app/cache/dev/profiler.db', '', '', 86400);
+        return $this->services['profiler.storage'] = new \Symfony\Component\HttpKernel\Profiler\SqliteProfilerStorage('sqlite:/var/www/html/source/labs/click/app/cache/dev/profiler.db', '', '', 86400);
     }
 
     /**
@@ -1669,7 +1669,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getTemplating_LocatorService()
     {
-        return $this->services['templating.locator'] = new \Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator($this->get('file_locator'), '/var/www/html/source/click/app/Resources');
+        return $this->services['templating.locator'] = new \Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator($this->get('file_locator'), '/var/www/html/source/labs/click/app/Resources');
     }
 
     /**
@@ -1720,7 +1720,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getValidator_Mapping_ClassMetadataFactoryService()
     {
-        return $this->services['validator.mapping.class_metadata_factory'] = new \Symfony\Component\Validator\Mapping\ClassMetadataFactory(new \Symfony\Component\Validator\Mapping\Loader\LoaderChain(array(0 => new \Symfony\Component\Validator\Mapping\Loader\AnnotationLoader(array('validation' => 'Symfony\\Component\\Validator\\Constraints\\')), 1 => new \Symfony\Component\Validator\Mapping\Loader\StaticMethodLoader('loadValidatorMetadata'), 2 => new \Symfony\Component\Validator\Mapping\Loader\XmlFilesLoader(array(0 => '/var/www/html/source/click/vendor/symfony/src/Symfony/Bundle/FrameworkBundle/DependencyInjection/../../../Component/Form/Resources/config/validation.xml')), 3 => new \Symfony\Component\Validator\Mapping\Loader\YamlFilesLoader(array()))));
+        return $this->services['validator.mapping.class_metadata_factory'] = new \Symfony\Component\Validator\Mapping\ClassMetadataFactory(new \Symfony\Component\Validator\Mapping\Loader\LoaderChain(array(0 => new \Symfony\Component\Validator\Mapping\Loader\AnnotationLoader(array('validation' => 'Symfony\\Component\\Validator\\Constraints\\')), 1 => new \Symfony\Component\Validator\Mapping\Loader\StaticMethodLoader('loadValidatorMetadata'), 2 => new \Symfony\Component\Validator\Mapping\Loader\XmlFilesLoader(array(0 => '/var/www/html/source/labs/click/vendor/symfony/src/Symfony/Bundle/FrameworkBundle/DependencyInjection/../../../Component/Form/Resources/config/validation.xml')), 3 => new \Symfony\Component\Validator\Mapping\Loader\YamlFilesLoader(array()))));
     }
 
     /**
@@ -1760,12 +1760,12 @@ class appDevDebugProjectContainer extends Container
     protected function getDefaultParameters()
     {
         return array(
-            'kernel.root_dir' => '/var/www/html/source/click/app',
+            'kernel.root_dir' => '/var/www/html/source/labs/click/app',
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
             'kernel.name' => 'app',
-            'kernel.cache_dir' => '/var/www/html/source/click/app/cache/dev',
-            'kernel.logs_dir' => '/var/www/html/source/click/app/logs',
+            'kernel.cache_dir' => '/var/www/html/source/labs/click/app/cache/dev',
+            'kernel.logs_dir' => '/var/www/html/source/labs/click/app/logs',
             'kernel.bundles' => array(
                 'Framework' => 'Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle',
                 'Security' => 'Symfony\\Bundle\\SecurityBundle\\SecurityBundle',
@@ -1853,7 +1853,7 @@ class appDevDebugProjectContainer extends Container
             'router.options.matcher.cache_class' => 'appdevUrlMatcher',
             'router.options.generator.cache_class' => 'appdevUrlGenerator',
             'router.options.resource_type' => '',
-            'routing.resource' => '/var/www/html/source/click/app/config/routing_dev.yml',
+            'routing.resource' => '/var/www/html/source/labs/click/app/config/routing_dev.yml',
             'session.class' => 'Symfony\\Component\\HttpFoundation\\Session',
             'session.default_locale' => 'en',
             'session.storage.native.class' => 'Symfony\\Component\\HttpFoundation\\SessionStorage\\NativeSessionStorage',
@@ -1989,7 +1989,7 @@ class appDevDebugProjectContainer extends Container
             'twig.options' => array(
                 'debug' => true,
                 'strict_variables' => true,
-                'cache' => '/var/www/html/source/click/app/cache/dev/twig',
+                'cache' => '/var/www/html/source/labs/click/app/cache/dev/twig',
                 'charset' => 'UTF-8',
             ),
             'zend.logger.class' => 'Symfony\\Bundle\\ZendBundle\\Logger\\Logger',
@@ -2000,17 +2000,17 @@ class appDevDebugProjectContainer extends Container
             'zend.formatter.filesystem.format' => '%timestamp% %priorityName%: %message%
 ',
             'zend.logger.priority' => 7,
-            'zend.logger.path' => '/var/www/html/source/click/app/logs/dev.log',
+            'zend.logger.path' => '/var/www/html/source/labs/click/app/logs/dev.log',
             'swiftmailer.class' => 'Swift_Mailer',
             'swiftmailer.transport.sendmail.class' => 'Swift_Transport_SendmailTransport',
             'swiftmailer.transport.mail.class' => 'Swift_Transport_MailTransport',
             'swiftmailer.transport.failover.class' => 'Swift_Transport_FailoverTransport',
-            'swiftmailer.init_file' => '/var/www/html/source/click/vendor/swiftmailer/lib/swift_init.php',
+            'swiftmailer.init_file' => '/var/www/html/source/labs/click/vendor/swiftmailer/lib/swift_init.php',
             'swiftmailer.plugin.redirecting.class' => 'Swift_Plugins_RedirectingPlugin',
             'swiftmailer.plugin.blackhole.class' => 'Swift_Plugins_BlackholePlugin',
             'swiftmailer.plugin.messagelogger.class' => 'Symfony\\Bundle\\SwiftmailerBundle\\Logger\\MessageLogger',
             'swiftmailer.data_collector.class' => 'Symfony\\Bundle\\SwiftmailerBundle\\DataCollector\\MessageDataCollector',
-            'swiftmailer.base_dir' => '/var/www/html/source/click/vendor/swiftmailer/lib',
+            'swiftmailer.base_dir' => '/var/www/html/source/labs/click/vendor/swiftmailer/lib',
             'swiftmailer.transport.smtp.class' => 'Swift_Transport_EsmtpTransport',
             'swiftmailer.transport.name' => 'smtp',
             'swiftmailer.transport.smtp.encryption' => NULL,
@@ -2044,7 +2044,7 @@ class appDevDebugProjectContainer extends Container
                 0 => 'default',
             ),
             'doctrine.orm.proxy_namespace' => 'Proxies',
-            'doctrine.orm.proxy_dir' => '/var/www/html/source/click/app/cache/dev/doctrine/orm/Proxies',
+            'doctrine.orm.proxy_dir' => '/var/www/html/source/labs/click/app/cache/dev/doctrine/orm/Proxies',
             'doctrine.orm.cache.array_class' => 'Doctrine\\Common\\Cache\\ArrayCache',
             'doctrine.orm.cache.apc_class' => 'Doctrine\\Common\\Cache\\ApcCache',
             'doctrine.orm.cache.memcache_class' => 'Doctrine\\Common\\Cache\\MemcacheCache',
@@ -2077,7 +2077,7 @@ class appDevDebugProjectContainer extends Container
             ),
             'assetic.sass.bin' => NULL,
             'assetic.yui.jar' => NULL,
-            'assetic.cache_dir' => '/var/www/html/source/click/app/cache/dev/assetic',
+            'assetic.cache_dir' => '/var/www/html/source/labs/click/app/cache/dev/assetic',
             'assetic.twig_extension.dynamic.class' => 'Symfony\\Bundle\\AsseticBundle\\Twig\\DynamicExtension',
             'assetic.twig_extension.static.class' => 'Symfony\\Bundle\\AsseticBundle\\Twig\\StaticExtension',
             'assetic.twig_formula_loader.class' => 'Assetic\\Extension\\Twig\\TwigFormulaLoader',
@@ -2085,8 +2085,8 @@ class appDevDebugProjectContainer extends Container
             'assetic.php_formula_loader.class' => 'Symfony\\Bundle\\AsseticBundle\\Factory\\Loader\\AsseticHelperFormulaLoader',
             'assetic.debug' => true,
             'assetic.use_controller' => true,
-            'assetic.read_from' => '/var/www/html/source/click/app/../web',
-            'assetic.write_to' => '/var/www/html/source/click/app/../web',
+            'assetic.read_from' => '/var/www/html/source/labs/click/app/../web',
+            'assetic.write_to' => '/var/www/html/source/labs/click/app/../web',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',
             'assetic.filter.closure.api.class' => 'Assetic\\Filter\\GoogleClosure\\CompilerApiFilter',
             'assetic.filter.closure.jar.class' => 'Assetic\\Filter\\GoogleClosure\\CompilerJarFilter',
