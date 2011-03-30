@@ -13,3 +13,6 @@ Simple photo gallery project built using Symfony 2 (current version PR9)
     - Upload
     - Delete
  
+# Credit
+
+Icons sourced from http://p.yusukekamiyamane.com/
