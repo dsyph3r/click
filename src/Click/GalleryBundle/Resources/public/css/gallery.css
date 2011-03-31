@@ -14,6 +14,8 @@ ul.navigation { color: #fff; list-style: none; float: right; }
 ul.navigation li { float: left; margin-left: 20px; }
 ul.navigation li img { float: left; margin-right: 10px; }
 
-.content { clear: both; }
-.photo { border: 4px solid #ccc; padding: 5px; background: #fff;  margin: 10px; width: 350px; display: inline-block; vertical-align: middle; }
-.photo img { width: 350px; }
+.content { clear: both; padding: 10px 40px; }
+.gallery h2 { background: #ddd; padding: 5px; font-size: 24px; margin: 10px 0; color: #000; }
+
+.photo { border: 4px solid #ccc; padding: 5px; background: #fff;  margin: 10px; width: 200px; display: inline-block; vertical-align: middle; }
+.photo img { width: 200px; }

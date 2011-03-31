@@ -4,12 +4,17 @@
     
     {% for gallery in galleries %}
         <div class="gallery">
-            {% for photo in gallery.photos %}
-                <img src="/bundles/clickgallery/images/sample/{{ gallery.name | lower }}/{{ photo.name }}" alt=" {{ photo.name }}" />
-                <div class="toolbar">
-                  <img src="/bundles/clickgallery/images/icons/edit" />
-                </div>
-            {% endfor %}
+            <h2>{{ gallery.name }}</h2>
+            <div class="photos">
+                {% for photo in gallery.photos %}
+                    <div class="photo">
+                        <img src="/bundles/clickgallery/images/sample/{{ gallery.name | lower }}/{{ photo.name }}" alt=" {{ photo.name }}" />
+                        <div class="toolbar">
+                          <img src="/bundles/clickgallery/images/icons/edit" />
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     {% endfor %}
         

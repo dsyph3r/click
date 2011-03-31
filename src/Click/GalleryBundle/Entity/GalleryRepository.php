@@ -17,7 +17,7 @@ class GalleryRepository extends EntityRepository
     {
     	$qb = $this->createQueryBuilder('g')
                    ->select('g')
-                   ->addOrderBy('g.updatedAt', 'DESC')  ;  
+                   ->addOrderBy('g.name');  
     	
     	return $qb->getQuery()->getResult();    	
     }
