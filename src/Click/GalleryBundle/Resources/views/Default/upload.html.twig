@@ -2,7 +2,7 @@
 
 {% block content %}
     
-    <form action="#" method="post" {{ form_enctype(form) }}>
+    <form action="{{ path('upload') }}" method="post" {{ form_enctype(form) }}>
         {{ form_errors(form) }}
 
         {% for field in form %}

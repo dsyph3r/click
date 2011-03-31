@@ -4,9 +4,8 @@ namespace Click\GalleryBundle\Form;
 
 use Symfony\Component\Form\Form;
 use Symfony\Component\Form\TextField;
-use Symfony\Component\Form\FileField;
 
-class PhotoForm extends Form {
+class GalleryForm extends Form {
     
     protected function configure()
     {
@@ -15,7 +14,6 @@ class PhotoForm extends Form {
             'max_length' => 100,
         )));
         
-        $this->add(new FileField('photo', array('secret' => 'secret')));
     }
 
 

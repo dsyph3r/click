@@ -1,0 +1,14 @@
+{% extends "ClickGallery::layout.html.twig" %}
+
+{% block content %}
+    
+    {% for gallery in galleries %}
+        <div class="gallery">
+            <img src="/bundles/clickgallery/images/sample/{{ photo.name }}" alt=" {{ photo.name }}" />
+            <div class="toolbar">
+              <img src="/bundles/clickgallery/images/icons/edit" />
+            </div>
+        </div>
+    {% endfor %}
+        
+{% endblock %}

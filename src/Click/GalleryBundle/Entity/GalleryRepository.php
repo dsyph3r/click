@@ -12,4 +12,13 @@ use Doctrine\ORM\EntityRepository;
  */
 class GalleryRepository extends EntityRepository
 {
+    
+    public function getGalleries()
+    {
+    	$qb = $this->createQueryBuilder('g')
+                   ->select('g');  
+    	
+    	return $qb->getQuery()->getResult();    	
+    }
+    
 }
