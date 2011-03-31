@@ -8,8 +8,21 @@ Click\GalleryBundle\Entity\Gallery:
             id: true
             generator:
                 strategy: IDENTITY
-        name:
+        url:
             type: string
             length: 255
             unique: true
-    lifecycleCallbacks: {  }
+        name:
+            type: string
+            length: 255
+        description:
+            type: string
+            length: 400
+        createdAt:
+            type: datetime
+        updatedAt:
+            type: datetime
+            
+    lifecycleCallbacks:
+        prePersist: [ touchCreated ]
+        preUpdate: [ touchUpdated ]

@@ -11,19 +11,25 @@
         <div class="header">
             
             <div class="toolbar">
-                <h2>Gallery:</h2>
+
                 <ul class="navigation">
                     <li>
                         <a href="" title="" />
-                            <img src="{{ asset('bundles/clickgallery/images/icons/large/add.png') }}" alt="" /> Add
+                            <img src="{{ asset('bundles/clickgallery/images/icons/large/add.png') }}" alt="" /> New Gallery
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
         
-        {% block content %}
-        {% endblock %}
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        
+        <div class="footer">
+            
+        </div>
 
     </body>
 </html>

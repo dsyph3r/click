@@ -5,12 +5,15 @@ html, body { background: #000; color: #fff; text-align: center; font-family: san
 a { color: #fff; text-decoration: none; }
 a:hover { color: #F98D00; }
 
-.header { padding: 10px; }
+h1, h2, h3, h4 { font-weight: bold; }
+
+.header { padding: 10px; font-weight: bold; }
 .header .toolbar { float: right; font-size: 30px;}
 .header .toolbar h2 { display: inline;  }
 ul.navigation { color: #fff; list-style: none; float: right; }
 ul.navigation li { float: left; margin-left: 20px; }
 ul.navigation li img { float: left; margin-right: 10px; }
 
+.content { clear: both; }
 .photo { border: 4px solid #ccc; padding: 5px; background: #fff;  margin: 10px; width: 350px; display: inline-block; vertical-align: middle; }
 .photo img { width: 350px; }

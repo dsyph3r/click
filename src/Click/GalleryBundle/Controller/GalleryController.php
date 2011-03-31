@@ -3,7 +3,6 @@
 namespace Click\GalleryBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Click\GalleryBundle\Form\GalleryForm;
 
 class GalleryController extends Controller
 {
@@ -29,7 +28,7 @@ class GalleryController extends Controller
         
         $manager = $this->get('doctrine.orm.entity_manager');
 
-        // Get the photos
+        // Get the photos for this gallery
         $photos = $manager->getRepository('Click\GalleryBundle\Entity\Photo')->getPhotos();
         
         return $this->render(
