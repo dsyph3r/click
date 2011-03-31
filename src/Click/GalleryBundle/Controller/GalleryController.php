@@ -3,6 +3,7 @@
 namespace Click\GalleryBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Click\GalleryBundle\Form\GalleryForm;
 
 class GalleryController extends Controller
 {
@@ -40,4 +41,23 @@ class GalleryController extends Controller
         
     }
     
+    public function newAction() {
+        
+        $form = GalleryForm::create($this->get('form.context'), 'gallery');
+    
+        $form->bind($this->get('request'));
+    
+        // If the form has been submitted and is valid...
+        if ($form->isValid()) {
+        }
+    
+        // Display the form 
+        return $this->render(
+            'ClickGallery:Gallery:new.html.twig',
+            array(
+                'form' => $form
+            )
+        );
+        
+    }
 }

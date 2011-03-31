@@ -6,6 +6,10 @@ gallery:
     pattern:  /gallery
     defaults: { _controller: ClickGallery:Gallery:gallery }
     
+galleryNew:
+    pattern:  /gallery/new
+    defaults: { _controller: ClickGallery:Gallery:new }
+    
 upload:
     pattern:  /upload
     defaults: { _controller: ClickGallery:Photo:upload }

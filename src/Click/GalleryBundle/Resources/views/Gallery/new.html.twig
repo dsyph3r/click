@@ -1,0 +1,32 @@
+{% extends "ClickGallery::layout.html.twig" %}
+
+{% block navigation %}
+    <li>
+        <a href="{{ path('galleries') }}" title="Galleries" />
+            <img src="{{ asset('bundles/clickgallery/images/icons/large/gallery.png') }}" alt="" /> Galleries
+        </a>
+    </li>
+{% endblock %}
+
+{% block content %}
+    
+    <form action="{{ path('upload') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_errors(form) }}
+
+        {% for field in form %}
+            {% if not field.ishidden %}
+            <div>
+                {{ form_errors(field) }}
+                {{ form_label(field) }}
+                {{ form_field(field) }}
+            </div>
+            {% endif %}
+        {% endfor %}
+    
+        {{ form_hidden(form) }}
+
+        <input type="submit" value="Send!" />
+    </form>
+
+        
+{% endblock %}

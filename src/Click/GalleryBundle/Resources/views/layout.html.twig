@@ -13,11 +13,13 @@
             <div class="toolbar">
 
                 <ul class="navigation">
+                    {% block navigation %}
                     <li>
-                        <a href="" title="" />
+                        <a href="{{ path('galleryNew') }}" title="New Gallery" />
                             <img src="{{ asset('bundles/clickgallery/images/icons/large/add.png') }}" alt="" /> New Gallery
                         </a>
                     </li>
+                    {% endblock %}
                 </ul>
             </div>
         </div>
