@@ -7,22 +7,6 @@ use Click\GalleryBundle\Form\PhotoForm;
 
 class DefaultController extends Controller
 {
-    public function indexAction()
-    {
-        
-        $manager = $this->get('doctrine.orm.entity_manager');
-
-        // Get the photos
-        $photos = $manager->getRepository('Click\GalleryBundle\Entity\Photo')->getPhotos();
-        
-        return $this->render(
-            'ClickGallery:Default:index.html.twig',
-            array(
-                'photos' => $photos
-            )
-        );
-        
-    }
     
     public function uploadAction()
     {
@@ -41,7 +25,7 @@ class DefaultController extends Controller
     
         // Display the form with the values in $contactRequest
         return $this->render(
-            'ClickGallery:Default:upload.html.twig',
+            'ClickGallery:Photo:upload.html.twig',
             array(
                 'form' => $form
             )

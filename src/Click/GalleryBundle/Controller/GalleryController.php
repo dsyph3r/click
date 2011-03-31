@@ -24,4 +24,21 @@ class GalleryController extends Controller
         
     }
     
+    public function galleryAction()
+    {
+        
+        $manager = $this->get('doctrine.orm.entity_manager');
+
+        // Get the photos
+        $photos = $manager->getRepository('Click\GalleryBundle\Entity\Photo')->getPhotos();
+        
+        return $this->render(
+            'ClickGallery:Gallery:gallery.html.twig',
+            array(
+                'photos' => $photos
+            )
+        );
+        
+    }
+    
 }
