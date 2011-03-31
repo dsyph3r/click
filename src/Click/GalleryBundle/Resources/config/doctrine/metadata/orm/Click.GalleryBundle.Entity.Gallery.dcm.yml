@@ -22,7 +22,10 @@ Click\GalleryBundle\Entity\Gallery:
             type: datetime
         updatedAt:
             type: datetime
-            
+    oneToMany:
+        photos:
+          targetEntity: Photo
+          mappedBy: gallery
     lifecycleCallbacks:
         prePersist: [ touchCreated ]
         preUpdate: [ touchUpdated ]

@@ -163,4 +163,34 @@ class Gallery
         $date = new \DateTime('now');        
         $this->setExpiresAt($date->add(new \DateInterval($str)));        
     }
+    /**
+     * @var Click\GalleryBundle\Entity\Photo
+     */
+    private $photos;
+
+    public function __construct()
+    {
+        $this->photos = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
+    /**
+     * Add photos
+     *
+     * @param Click\GalleryBundle\Entity\Photo $photos
+     */
+    public function addPhotos(\Click\GalleryBundle\Entity\Photo $photos)
+    {
+        $this->photos[] = $photos;
+    }
+
+    /**
+     * Get photos
+     *
+     * @return Doctrine\Common\Collections\Collection $photos
+     */
+    public function getPhotos()
+    {
+        return $this->photos;
+    }
+    
 }

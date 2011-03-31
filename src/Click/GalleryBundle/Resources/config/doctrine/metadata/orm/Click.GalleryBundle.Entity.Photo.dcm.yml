@@ -12,4 +12,14 @@ Click\GalleryBundle\Entity\Photo:
             type: string
             length: 255
             unique: true
-    lifecycleCallbacks: {  }
+        createdAt:
+            type: datetime
+        updatedAt:
+            type: datetime
+    manyToOne:
+        gallery:
+            targetEntity: Gallery
+            inversedBy: photos
+    lifecycleCallbacks:
+        prePersist: [ touchCreated ]
+        preUpdate: [ touchUpdated ]

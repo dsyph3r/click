@@ -16,9 +16,24 @@ class GalleryRepository extends EntityRepository
     public function getGalleries()
     {
     	$qb = $this->createQueryBuilder('g')
-                   ->select('g');  
+                   ->select('g')
+                   ->addOrderBy('g.updatedAt', 'DESC')  ;  
     	
     	return $qb->getQuery()->getResult();    	
+    }
+    
+    public function getCoverPhoto(Gallery $gallery)
+    {
+
+        $qb = $this->createQueryBuilder('p')
+                    ->select('p')
+                    ->innerJoin('p.gallery', 'g')
+                    ->innerJoin('p.gallery','g','WITH','g = :gallery')    		
+                    ->setParameter('gallery', $gallery)
+                    ->addOrderBy('p.updatedAt', 'DESC')
+                    ->setMaxResults(1);
+        
+        return $qb->getQuery()->getResult();
     }
     
 }
